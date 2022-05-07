@@ -18,7 +18,7 @@ function setup() {
   countJobs = RiTa.concordance(preJobs.join(" "), opts); //use rita to sort through words by amount used
   for (var i in countJobs) {
     if (countJobs.hasOwnProperty(i)) {
-      if (countJobs[i] > 10) { //if word is used more than 4 times
+      if (countJobs[i] > 10) { //if word is used more than 10 times
         jobs.push(new Word(i, countJobs[i], 'Jobs')); //add to most common words list
       }
     }
